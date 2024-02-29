@@ -1,4 +1,4 @@
-package com.api.models;
+package com.api.library.models;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -29,7 +29,7 @@ public class LibraryModel implements Serializable {
     private String genre;
     @Column(nullable = false, precision = 6)
     private Integer pages;
-    @Column(nullable = false, precision = 6, scale = 2)
+    @Column(nullable = false, precision = 6)
     private Float value;
     @Column(nullable = false)
     private LocalDateTime registrationDate;
