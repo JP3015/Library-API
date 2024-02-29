@@ -35,7 +35,6 @@ public class LibraryModel implements Serializable {
     private LocalDateTime registrationDate;
     
     
-    
 	public UUID getId() {
 		return id;
 	}
