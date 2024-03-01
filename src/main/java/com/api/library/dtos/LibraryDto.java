@@ -14,7 +14,7 @@ public class LibraryDto {
     @NotNull
     private Integer pages;
     @NotNull
-    private Integer value;
+    private Float value;
     
     
 	public String getBookName() {
@@ -41,10 +41,10 @@ public class LibraryDto {
 	public void setPages(Integer pages) {
 		this.pages = pages;
 	}
-	public Integer getValue() {
+	public Float getValue() {
 		return value;
 	}
-	public void setValue(Integer value) {
+	public void setValue(Float value) {
 		this.value = value;
 	}
     

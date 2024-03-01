@@ -43,7 +43,7 @@ public class LibraryController {
 	
 	@PostMapping
     public ResponseEntity<Object> saveBook(@RequestBody @Valid LibraryDto libraryDto){
-		 if(libraryService.existsByLicenseBookName(libraryDto.getBookName())){
+		 if(libraryService.existsByBookName(libraryDto.getBookName())){
 	          return ResponseEntity.status(HttpStatus.CONFLICT).body("Conflict: Book name is already in use!");
 	        }
         var libraryModel = new LibraryModel();

@@ -31,8 +31,8 @@ public class LibraryService {
 		return libraryRepository.save(libraryModel);
 	}
 
-	public boolean existsByLicenseBookName(String bookName) {
-		return libraryRepository.existsByLicenseBookName(bookName);
+	public boolean existsByBookName(String bookName) {
+		return libraryRepository.existsByBookName(bookName);
 	}
 	
 	public Optional<LibraryModel> findById(UUID id) {
