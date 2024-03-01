@@ -9,6 +9,8 @@ import com.api.library.models.LibraryModel;
 
 @Repository
 public interface LibraryRepository extends JpaRepository<LibraryModel, UUID>{
+
+	boolean existsByLicenseBookName(String bookName);
 	
 	
 }
